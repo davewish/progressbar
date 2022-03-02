@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        p {
+            font-size: 20px;
+        }
+        .container{
+            background-color: white;
+            width: 100%;
+                border-radius: 15px;
+                margin-top: 20px;
+        }
+      
+        .container-progress {
+            background-color: rgb(192, 192, 192);
+            padding:1px;
+            width: 50%;
+                border-radius: 15px;
+                margin-top: 20px;
+                border-width: 2px;
+        }
+      
+        .progress {
+            background-color: rgb(116, 194, 92);
+            color: white;
+            height: 20px;
+            padding: 4px;
+            text-align: right;
+            font-size: 14px;
+                border-radius: 15px;
+                border-width: 2px;
+        }
+        .green{
+            background-color: green;
+            width: 50%;
+        }
+        .red{
+            background-color: red;
+            width: 50%;
+        }
+      
+        .white {
+            
+            background-color: rgba(255, 255, 255, 0.945);
+            color: black
+            ;
+            width: 50%;
+        }
+      
+        .blue{
+            background-color: blue;
+            width: 50%;
+        }
+        .yellow{
+            background-color: yellow;
+            width: 50%;
+        }
+        .btn{
+            margin:20px auto;
+            width:10%;
+            height: 30px;
+           
+        }
+        .btn-container{
+            margin:10px auto
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="container-progress">
+            <div class="progress green ">50%</div>
+        </div>
+      
+       
+        <div class="container-progress">
+            <div class="progress red">50%</div>
+        </div>
+        <div class="container-progress">
+            <div class="progress white ">50%</div>
+        </div>
+        <div class="container-progress">
+            <div class="progress blue ">50%</div>
+        </div>
+        <div class="container-progress">
+            <div class="progress yellow">50%</div>
+        </div>
+        <div  class="btn-container">  <button class="btn" onclick="fun()"> Finish</button></div>
+        
+    </div>
+    
+    <script type="text/javascript" language="javascript">
+
+        function fun() {
+
+          
+  
+            var divArr = document.getElementsByClassName("progress");
+            for( var i = 0; i < divArr.length; i++ ){
+    divArr[i].style.width = "100%";  
+    divArr[i].innerText="100%"      
+}
+
+              
+
+         
+        }
+
+          
+
+    </script>
+</body>
+</html
